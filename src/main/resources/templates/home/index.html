@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+</head>
+<body>
+	<img class="logo" th:src="@{/images/imagen-core-networks.png}"
+		alt="Logo de Core Networks para Proyecto Final"></img>
+	<h1 class="color-verde" th:text="${cabecera}"></h1>
+	<p class="color-gris" th:text="${loren}"></p>
+
+	<p class="estilo-italica"
+		th:utext="${proverbioEsp} + '<br>' + ${proverbioChino}"></p>
+
+	<ul>
+		<li><a href="/loto/menu">LOTO</a></li>
+		<li><a href="/libros/menu">LIBROS</a></li>
+		<li><a href="/imagenes/menu">IMÁGENES</a></li>
+
+	</ul>
+
+</body>
+</html>

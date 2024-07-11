@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}"></title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+</head>
+<body>
+    <h1 th:text="${titulo}"></h1>
+    <img class="capital-aleatoria" th:src="@{'/images/' + ${imagen}}" alt="Imagen Aleatoria">
+    <br><br>
+    <a th:href="@{/imagenes/menu}">Volver al Menú de Imágenes</a>
+    <br><br>
+    <a href="/">Volver al Inicio</a>
+</body>
+</html>

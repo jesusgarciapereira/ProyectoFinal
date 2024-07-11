@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+</head>
+<body>
+	<h1 th:text="${cabecera}"></h1>
+
+	<div class="imagenes-container">
+		<img class="capitales" th:src="@{/images/capitales/image1.jpg}"
+			alt="Imagen Capital"> <img class="capitales"
+			th:src="@{/images/capitales/image2.jpg}" alt="Imagen Capital">
+		<img class="capitales" th:src="@{/images/capitales/image3.jpg}"
+			alt="Imagen Capital"> <img class="capitales"
+			th:src="@{/images/capitales/image4.jpg}" alt="Imagen Capital">
+		<img class="capitales" th:src="@{/images/capitales/image5.jpg}"
+			alt="Imagen Capital"> <img class="capitales"
+			th:src="@{/images/capitales/image6.jpg}" alt="Imagen Capital">
+		<img class="capitales" th:src="@{/images/capitales/image7.jpg}"
+			alt="Imagen Capital"> <img class="capitales"
+			th:src="@{/images/capitales/image8.jpg}" alt="Imagen Capital">
+		<img class="capitales" th:src="@{/images/capitales/image9.jpg}"
+			alt="Imagen Capital"> <img class="capitales"
+			th:src="@{/images/capitales/image10.jpg}" alt="Imagen Capital">
+	</div>
+	
+	<ul>
+		<li><a th:href="@{/imagenes/aleatorio}">Ver Imagen Aleatoria</a></li>
+	</ul>
+	<a th:href="@{/}">Volver al Inicio</a>
+</body>
+</html>
